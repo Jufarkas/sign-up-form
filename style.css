@@ -7,3 +7,53 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+.mainForm input {
+font-size: 20px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.createAccount {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #507238;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 5px;
+    width: 210px;
+    height: 45px;
+}
+
+.createAccount:hover {
+    box-shadow: 
+    0 5px 5px 0 rgba(0, 0, 0, 0.2),
+    0 5px 5px 0 rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.createAccount:active {
+    background-color: #69a53f;
+    box-shadow: inset 0 0 15px 10px #507238,
+    0 3px 5px 0 rgba(0, 0, 0, 0.2),
+    0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+.login {
+    font-size: 18px;
+    font-weight: 600;
+    color: #507238;
+    text-decoration: none;
+}
+
+.login:hover {
+    cursor: pointer;
+}
+
+.login:active {
+    color: #69a53f;
+}
