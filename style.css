@@ -1,20 +1,29 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-.mainForm {
+.body {
+    display: flex;
+}
+
+.sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.mainForm input {
-font-size: 20px;
+.sidebarImage {
+    height: 100vh;
 }
 
-input {
-    border: 1px solid grey;
-    border-radius: 5px;
+.photoCredit {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
 }
 
 .createAccount {
@@ -37,11 +46,10 @@ input {
 
 .createAccount:active {
     background-color: #69a53f;
-    box-shadow: inset 0 0 15px 10px #507238,
+    box-shadow: inset 0 0 20px 5px #507238,
     0 3px 5px 0 rgba(0, 0, 0, 0.2),
     0 3px 5px 0 rgba(0, 0, 0, 0.1);
 }
-
 
 .login {
     font-size: 18px;

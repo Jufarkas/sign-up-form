@@ -12,30 +12,44 @@
         window.history.replaceState( null, null, window.location.href );
     }
     </script>
-
-    <p class="mainPara">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
-        <p>Sign up now to get started</p>
-        <p>You know you want to.</p>
-        <p>Let's do this!</p>
-    </p>
-    <form action="" method="post" class="mainForm">
-        <fieldset>
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" id="firstName" name="first-name">
-            <label for="lastName">LAST NAME</label>
-            <input type="text" id="lastName" name="last-name">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
-            <label for="phoneNum">PHONE NUMBER</label>
-            <input type="tel" id="phoneNum" name="phone">
-            <label for="password">PASSWORD</label>
-            <input type="password" id="password" name="password">
-            <label for="passConfirm">CONFIRM PASSWORD</label>
-            <input type="password" id="passConfirm">
-        </fieldset>
-        <button type="submit" class="createAccount" disabled>Create Account</button>
-        <p>Already have an account? <a href="" class="login">Log in</a></p>
-    </form>
+    
+    <div class="body">
+        <div class="sidebar">
+            <img src="./images/cat-sidebar.jpg" class="sidebarImage"><p class="photoCredit">Photo by <a href="https://unsplash.com/@bogdanf">Bogdan Farca</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        
+        <div class="mainPara">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
+                <p>Sign up now to get started</p>
+                <p>You know you want to.</p>
+                <p>Let's do this!</p>
+            </p>
+        </div>
+        <form action="" method="post">
+            <fieldset class="mainForm">
+                <section class="fullName">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="first-name">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="last-name">
+                </section>
+                <section class="contact">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phoneNum">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNum" name="phone">
+                </section>
+                <section class="passFields">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                    <label for="passConfirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="passConfirm">
+                </section>
+            </fieldset>
+            <button type="submit" class="createAccount" disabled>Create Account</button>
+            <p>Already have an account? <a href="" class="login">Log in</a></p>
+        </form>
+    </div>
     
 </body>
 </html>
