@@ -1,11 +1,17 @@
 body {
+    display: flex;
     margin: 0;
     border: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
-.body {
+.contentBody {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
 }
 
 .sidebar {
@@ -19,14 +25,42 @@ body {
     height: 100vh;
 }
 
+.mainPara, .mainPara * {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+#doThis {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.mainForm {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+    box-shadow: 
+    0 15px 10px -10px rgba(0, 0, 0, 0.5),
+    0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
 .photoCredit {
     position: absolute;
-    font-size: 14px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
     color: white;
     text-decoration: none;
 }
 
 .createAccount {
+    margin: 40px 0 10px 0;
     font-size: 16px;
     font-weight: 600;
     background-color: #507238;
