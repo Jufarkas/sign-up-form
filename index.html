@@ -14,6 +14,10 @@
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
     }
+
+    let passCheck = document.querySelector('.passConfirm')
+    let submit = document.querySelector('.createAccount')
+
     </script>
     
     <div class="sidebar">
@@ -44,7 +48,7 @@
                 </section>
                 <section class="contact">
                     <label for="email">EMAIL
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </label>
                     <label for="phoneNum">PHONE NUMBER
                         <input type="tel" id="phoneNum" name="phone">
@@ -52,15 +56,19 @@
                 </section>
                 <section class="passFields">
                     <label for="password">PASSWORD
-                        <input type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+                        <p class="passSubtext">*Minimum eight (8) characters +
+                            <br>one (1) UPPERCASE letter,
+                            <br>one (1) lowercase letter,
+                            <br>and one (1) number</p>
                     </label>
                     <label for="passConfirm">CONFIRM PASSWORD
-                        <input type="password" id="passConfirm">
+                        <input type="password" id="passConfirm" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
                     </label>
                 </section>
             </fieldset>
         </form>
-        <button type="submit" class="createAccount" form="form" disabled>Create Account</button>
+        <button type="submit" class="createAccount" form="form">Create Account</button>
             <p class="account">Already have an account? <a href="" class="login">Log in</a></p>
     </div>
     
