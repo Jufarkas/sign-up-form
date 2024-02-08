@@ -80,6 +80,10 @@ label {
     font-size: 24px;
 }
 
+.passSubtext {
+    font-size: 12px;
+}
+
 .mainForm {
     max-width: 620px;
     border: none;
