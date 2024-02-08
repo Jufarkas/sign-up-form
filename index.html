@@ -22,9 +22,9 @@
     <div class="contentBody">
         <div class="mainPara">
             <p>
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
                 <br>
-                Sign up <i>now</i> to get started
+                Sign up <i>now</i> to get started.
                 <br>
                 <br>
                 You <i>know</i> you want to.
@@ -32,30 +32,36 @@
             <p id="doThis">Let's do this!</p>
             
         </div>
-        <form action="" method="post">
+        <form action="" method="post" id="form">
             <fieldset class="mainForm">
                 <section class="fullName">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="first-name">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="last-name">
+                    <label for="firstName">FIRST NAME
+                        <input type="text" id="firstName" name="first-name">
+                    </label>
+                    <label for="lastName">LAST NAME
+                        <input type="text" id="lastName" name="last-name">
+                    </label>
                 </section>
                 <section class="contact">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-                    <label for="phoneNum">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNum" name="phone">
+                    <label for="email">EMAIL
+                        <input type="email" id="email" name="email">
+                    </label>
+                    <label for="phoneNum">PHONE NUMBER
+                        <input type="tel" id="phoneNum" name="phone">
+                    </label>
                 </section>
                 <section class="passFields">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
-                    <label for="passConfirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="passConfirm">
+                    <label for="password">PASSWORD
+                        <input type="password" id="password" name="password">
+                    </label>
+                    <label for="passConfirm">CONFIRM PASSWORD
+                        <input type="password" id="passConfirm">
+                    </label>
                 </section>
             </fieldset>
-            <button type="submit" class="createAccount" disabled>Create Account</button>
-            <p>Already have an account? <a href="" class="login">Log in</a></p>
         </form>
+        <button type="submit" class="createAccount" form="form" disabled>Create Account</button>
+            <p class="account">Already have an account? <a href="" class="login">Log in</a></p>
     </div>
     
 </body>
