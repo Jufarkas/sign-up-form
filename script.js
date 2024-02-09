@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
 
 function validatePassword(){
     if(pass.value != passConfirm.value) {
-        passConfirm.setCustomValidity("Passwords Don't Match");
+        passConfirm.setCustomValidity("Passwords do not match");
     } else {
         passConfirm.setCustomValidity('');
     }
