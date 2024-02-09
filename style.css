@@ -65,12 +65,13 @@ label {
 .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: center;
-    height: 100vh;
 }
 
 .sidebarImage {
+    position: sticky;
+    top: 0;
+    bottom: 0;
     height: 100vh;
 }
 
@@ -117,7 +118,8 @@ label {
 }
 
 .photoCredit {
-    position: absolute;
+    position: fixed;
+    bottom: 0;
     font-size: 10px;
     letter-spacing: 1px;
     font-weight: 500;
